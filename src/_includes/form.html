@@ -1,12 +1,15 @@
-<form role="form">
+{% assign formData = site.data.forms[form] %}
+<form role="form" method="{{ formData.method }}" action="{{ formData.url }}">
+	<legend>{{ formData.heading }}</legend>
 	<fieldset>
-		{% for f in site.data.forms[form] %}
+		<input type="hidden" name="form" value="{{ form }}">
+		{% for f in formData.fields %}
 		<div class="form-group">
 			<label for="form{{ f.name }}">{{ f.label }}:</label>
-			{% if form.type == "textarea" %}
-				<textarea class="form-control" id="form{{ f.name }}" ></textarea>
+			{% if f.type == "textarea" %}
+				<textarea class="form-control form-{{ f.name }}" name="{{ f.name }}"></textarea>
 			{% else %}
-				<input type="{{ f.type }}" class="form-control" id="form{{ f.name }}">
+				<input type="{{ f.type }}" class="form-control form-{{ f.name }}"  name="{{ f.name }}">
 			{% endif %}
 		</div>
 		{% endfor %}

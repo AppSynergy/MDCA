@@ -1,15 +1,19 @@
 <div class="sidebarWrapper">
+		
 	<h2>Why the Isle of Man?</h2>
+	
 	<a href="/isle-of-man/" class="isleOfManMap" title="Find out more about the Isle of Man">
 		<!--<img src="/img/MAP.fw.png" />-->
 	</a>
+	
+	{% if page.name != "home" and page.name != "isleofman" %}
+		{% include learnMore.html %}
+	{% endif %}
+	
+	{% if page.name == "currency" %}
+		{% assign form = "newsletter" %}
+		{% include form.html %}
+	{% endif %}
+		
 </div>
 
-{% if page.name != "home" and page.name != "isleofman" %}
-	{% include learnMore.html %}
-{% endif %}
-
-<h2>Subscribe for news</h2>
-
-{% assign form = "newsletter" %}
-{% include form.html %}

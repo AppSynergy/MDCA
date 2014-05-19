@@ -21,9 +21,7 @@ Our members encompass all areas of business related to developing a successful c
 * digital currency miners
 * accountancy and audit firms
 
-If you woud like to become a member or find out more, please email Tim Craine at [timcraine@iom.com](timcraine@iom.com)
-
-##Apply
+If you woud like to become a member or find out more, please email Tim Craine at [timcraine@iom.com](timcraine@iom.com) or complete this form:
 
 {% assign form = "apply" %}
 {% include form.html %}

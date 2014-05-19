@@ -1,5 +1,6 @@
 ---
 layout: default
+name: currency
 title: About Digital Currency
 permalink: digital-currency/
 color: blue
