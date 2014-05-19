@@ -199,3 +199,8 @@ html .content-faq p.answer {
 html .content-faq em {
   color: #666666;
   font-style: normal; }
+html form {
+  border: 1px solid #edc815;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px; }

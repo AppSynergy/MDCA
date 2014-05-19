@@ -1,0 +1,26 @@
+apply:
+  -
+    label: Name
+    name: name
+    type: text
+  -
+    label: Occupation
+    name: occupation
+    type: text
+  -
+    label: Email Address
+    name: email
+    type: email
+  -
+    label: Message
+    name: message
+    type: textarea
+newsletter:
+  -
+    label: Name
+    name: name
+    type: text
+  -
+    label: Occupation
+    name: occupation
+    type: text

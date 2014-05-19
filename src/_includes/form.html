@@ -1,0 +1,15 @@
+<form role="form">
+	<fieldset>
+		{% for f in site.data.forms[form] %}
+		<div class="form-group">
+			<label for="form{{ f.name }}">{{ f.label }}:</label>
+			{% if form.type == "textarea" %}
+				<textarea class="form-control" id="form{{ f.name }}" ></textarea>
+			{% else %}
+				<input type="{{ f.type }}" class="form-control" id="form{{ f.name }}">
+			{% endif %}
+		</div>
+		{% endfor %}
+	</fieldset>
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form>
