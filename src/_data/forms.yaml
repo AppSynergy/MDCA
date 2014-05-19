@@ -1,7 +1,7 @@
 apply:
   heading: Apply to Join MDCA
   method: POST
-  url: http://getsimpleform.com/messages?form_api_token=581a4e4a9f197aff99097d7b8cedc96e
+  url: http://localhost:4567/
   fields:
     -
       label: Name
@@ -22,7 +22,7 @@ apply:
 newsletter:
   heading: MDCA Mailing List
   method: POST
-  url: http://getsimpleform.com/messages?form_api_token=581a4e4a9f197aff99097d7b8cedc96e
+  url: http://localhost:4567/
   fields:
     -
       label: Name
