@@ -1,7 +1,9 @@
 *.komodoproject
 site/*
+api/node_modules
 src/_sass/.sass-cache
 .sass-cache
 Gemfile*
 #src/img
 *.gz
+*.log

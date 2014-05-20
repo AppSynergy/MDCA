@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+# encoding: UTF-8
 require 'sqlite3'
 require 'sinatra'
 require 'active_record'

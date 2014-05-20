@@ -1,0 +1,10 @@
+{
+  "name": "MDCA",
+  "description": "MDCA",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+	"nodemailer": "0.x"
+  }
+}
